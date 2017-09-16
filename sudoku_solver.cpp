@@ -46,7 +46,7 @@ bool completed(short int *s)
 
 bool trycomplete(short int* s, int ind)
 {
-	//gi‡ risolto
+	//gi√† risolto
 	if (s[ind] != -1)
 		return false;
 	
@@ -76,7 +76,7 @@ bool trycomplete(short int* s, int ind)
 				iv[v-1] = true;
 		}
 		
-	//controlle se c'Ë un unico valore a true
+	//controlle se c'√® un unico valore a true
 	int cont = 0;
 	int val = -1;
 	for(int i=0;i<9;i++)
@@ -202,7 +202,7 @@ int main()
 	stampa(s);
 	if(!completed(s))
 	{
-		cout << "Primo metodo non sufficente, inizio secondo metodo...\n";
+		cout << "Primo metodo non sufficiente, inizio secondo metodo...\n";
 		if(!resolveRic(s))
 			cout << "ERRORE! Sudoku non possibile!\n";
 	}
